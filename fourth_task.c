@@ -4,6 +4,18 @@
 int main()
 {
     // declare  variable, set its value to 1
+    int l,h;
+    printf("Give me a lower bound: ");
+    scanf("%d",&l);
+    printf("Give me a higher bound: ");
+    scanf("%d",&h);
+    int c;
+    if(l>h)
+    {
+        c=l;
+        l=h;
+        h=c;
+    }
 
     // create a while loop that runs while the variable is less than or equal to 20
     {
@@ -13,7 +25,10 @@ int main()
         // print the value of the variable
 
     } //this is the end of the body of the while loop, it keeps looping back to the while statement, while the condition is true
-
+    for (int i=l; i<=h; i++)
+    {
+        printf("%d\n",i);
+    }
     // you can put breakpoints on the closing curly brace of the while loop to see how it loops back to the while statement and checks the condition again
     // you can also put breakpoints on the increment statement to see how the variable changes each time through the loop
     // you can add breakpoint by clicking in the margin to the left of the line numbers!
